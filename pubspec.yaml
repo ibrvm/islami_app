@@ -1,0 +1,51 @@
+name: islami_app_task
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.2.0
+  carousel_slider: ^5.1.1
+  flutter_native_splash: ^2.4.6
+  auto_size_text: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/splash/
+    - assets/images/bottom_bar_icons/
+    - assets/images/onboarding/
+    - assets/suars/
+    - assets/ahadith/
+  fonts:
+    - family: Janna
+      fonts:
+        - asset: assets/fonts/Janna LT Bold.ttf
+
+    - family: Kamali
+      fonts:
+        - asset: assets/fonts/KamaliRegular-pg81r.ttf
+        - asset: assets/fonts/KamaliRegular-xR725.otf
+
+flutter_native_splash:
+  color: "#202020"
+  image: assets/images/splash/native_splash_logo.png
+  branding: assets/images/splash/native_splash_branding.png
+  android_12:
+    color: "#202020"
+    image: assets/images/splash/native_splash_logo.png
+    branding: assets/images/splash/native_splash_branding.png
+  ios: true
+  android: true
+  web: false
